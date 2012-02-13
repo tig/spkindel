@@ -13,24 +13,24 @@ This driver was originally developed to enable Premise to interface with Crestro
 I'm very interested in hearing from people who have devices of this sort that this driver either works with or does not (because, for example, it uses a binary protocol or something where my "prefix:" scheme is incompatible).
 
 ##Files included
-*sppkindel.dll    Premise Home Control Software driver for interfacing with an external control processor.
-*Premise Device Serial IO Adapter.zip    Crestron SIMPL module for simplifying bridging to Crestron 2-series processors (will not work with x-gen processors).
-*Crestron.ico   Icon you can copy to your Premise icons directory and use if your external processor is a Crestron unit.
-*Sample.smw  Sample SIMPL Windows program illustrating how this bridge works with Crestron (will not work with x-gen processors).
+* *sppkindel.dll* Premise Home Control Software driver for interfacing with an external control processor.
+* *Premise Device Serial IO Adapter.zip* Crestron SIMPL module for simplifying bridging to Crestron 2-series processors (will not work with x-gen processors).
+* *Crestron.ico* Icon you can copy to your Premise icons directory and use if your external processor is a Crestron unit.
+* *Sample.smw* Sample SIMPL Windows program illustrating how this bridge works with Crestron (will not work with x-gen processors).
 
 ##Installation
 
-*Copy spkindel.dll to your \Program Files\Premise\SYS\bin\drivers directory.
-*Restart the Premise service (not always necessary, but I've seen weirdness in Premise if you don't do this).
-*In Premise Builder go to Add-Ins and enable the driver named "KindelSystems".
+* Copy spkindel.dll to your \Program Files\Premise\SYS\bin\drivers directory.
+* Restart the Premise service (not always necessary, but I've seen weirdness in Premise if you don't do this).
+* In Premise Builder go to Add-Ins and enable the driver named "KindelSystems".
 (You will now have a KindelSystems node in Devices.
-*Unzip Premise Device Serial IO Adapter.zip to your SIMPL Windows Usrmacro and Userplus directories (the .umc file goes in Usermacro and the other files go in Userplus).
-*In SIMPL Windows choose "Rebuild User and Project Databases" in the Tools menu.
-*You will now have this symbol available in your symbol library under User Modules/Serial.
+* Unzip Premise Device Serial IO Adapter.zip to your SIMPL Windows Usrmacro and Userplus directories (the .umc file goes in Usermacro and the other files go in Userplus).
+* In SIMPL Windows choose "Rebuild User and Project Databases" in the Tools menu.
+* You will now have this symbol available in your symbol library under User Modules/Serial.
 
 ##Bug Reporting
-*Use the GitHub Issues page at https://github.com/tig/spkindel/issues
-*Use https://github.com/tig/spkindel/wiki for discussions & suggestions
+* Use the GitHub Issues page at https://github.com/tig/spkindel/issues
+* Use https://github.com/tig/spkindel/wiki for discussions & suggestions
 
 ##Release Notes
 ####Build 2.0.2 - November 9, 2003
