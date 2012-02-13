@@ -1,0 +1,26 @@
+// spkindel.idl : IDL source for spkindel
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (spkindel.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(0002A553-0000-0000-C000-000000000046),
+	version(1.0),
+	helpstring("spkindel 1.0 Type Library")
+]
+library spkindelLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(0002A541-0000-0000-C000-000000000046),
+		helpstring("ExternalControlProcessor Class")
+	]
+	coclass ExternalControlProcessor
+	{
+		[default] interface IUnknown;
+	};
+};
