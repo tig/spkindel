@@ -18,11 +18,11 @@
 *.ilk
 *.idb
 *manifest.rc
-*.vcxproj*
 upgradelog*.*
 *.aps
 spkindel.h
 *_i.c
+*.filters
 # Include dlls if they’re in the NuGet packages directory
 !/packages/*/lib/*.dll
 !/packages/*/lib/*/*.dll
