@@ -1,40 +1,23 @@
-Microsoft Visual Studio Solution File, Format Version 8.00
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "spkindel", "spkindel.vcproj", "{9486F47B-3B34-4D10-8E03-50C8F97DB206}"
-	ProjectSection(ProjectDependencies) = postProject
-	EndProjectSection
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "spkindel", "spkindel.vcxproj", "{9486F47B-3B34-4D10-8E03-50C8F97DB206}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "spkindelSP", "spkindelPS.vcproj", "{0B661F35-0E90-4CE3-ACF2-57AB407AAF65}"
-	ProjectSection(ProjectDependencies) = postProject
-		{9486F47B-3B34-4D10-8E03-50C8F97DB206} = {9486F47B-3B34-4D10-8E03-50C8F97DB206}
-	EndProjectSection
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "spkindelSP", "spkindelPS.vcxproj", "{0B661F35-0E90-4CE3-ACF2-57AB407AAF65}"
 EndProject
 Global
-	GlobalSection(SourceCodeControl) = preSolution
-		SccNumberOfProjects = 3
-		SccLocalPath0 = .
-		CanCheckoutShared = false
-		SolutionUniqueID = {24F297FA-5F87-4711-AA5A-270239C6658B}
-		SccProjectUniqueName1 = spkindel.vcproj
-		SccLocalPath1 = .
-		CanCheckoutShared = false
-		SccProjectUniqueName2 = spkindelPS.vcproj
-		SccLocalPath2 = .
-		CanCheckoutShared = false
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
 	EndGlobalSection
-	GlobalSection(SolutionConfiguration) = preSolution
-		Debug = Debug
-		Release = Release
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9486F47B-3B34-4D10-8E03-50C8F97DB206}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9486F47B-3B34-4D10-8E03-50C8F97DB206}.Debug|Win32.Build.0 = Debug|Win32
+		{9486F47B-3B34-4D10-8E03-50C8F97DB206}.Release|Win32.ActiveCfg = Release|Win32
+		{9486F47B-3B34-4D10-8E03-50C8F97DB206}.Release|Win32.Build.0 = Release|Win32
+		{0B661F35-0E90-4CE3-ACF2-57AB407AAF65}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0B661F35-0E90-4CE3-ACF2-57AB407AAF65}.Release|Win32.ActiveCfg = Release|Win32
 	EndGlobalSection
-	GlobalSection(ProjectConfiguration) = postSolution
-		{9486F47B-3B34-4D10-8E03-50C8F97DB206}.Debug.ActiveCfg = Debug|Win32
-		{9486F47B-3B34-4D10-8E03-50C8F97DB206}.Debug.Build.0 = Debug|Win32
-		{9486F47B-3B34-4D10-8E03-50C8F97DB206}.Release.ActiveCfg = Release|Win32
-		{9486F47B-3B34-4D10-8E03-50C8F97DB206}.Release.Build.0 = Release|Win32
-		{0B661F35-0E90-4CE3-ACF2-57AB407AAF65}.Debug.ActiveCfg = Debug|Win32
-		{0B661F35-0E90-4CE3-ACF2-57AB407AAF65}.Release.ActiveCfg = Release|Win32
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-	EndGlobalSection
-	GlobalSection(ExtensibilityAddIns) = postSolution
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal

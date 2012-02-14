@@ -4,7 +4,7 @@
 
 
 #include "resource.h"       // main symbols
-#include "driverutil.h"
+#include <driverutil.h>
 
 #define XML_Device_VirtualDevice	L"sys://Schema/ExternalControlProcessor/VirtualDevice"
 

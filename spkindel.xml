@@ -1,4 +1,4 @@
-<DriverLibrary ID="{0002A540-0000-0000-C000-000000000046}" Name="KindelSystems" Version="2.0.2" Description="Kindel Systems External Control Processor driver library">
+<DriverLibrary ID="{0002A540-0000-0000-C000-000000000046}" Name="KindelSystems" Version="2.1.0" Description="Kindel Systems External Control Processor driver library">
 	<Class ID="{0002A541-0000-0000-C000-000000000046}" Name="KindelSystems" Icon="shortcutdevices.ico" Description="Top level class for External Control Processor subsystem">
 		<SuperClass ID="{0002A542-0000-0000-C000-000000000046}" Name="Subsystem" LinkObject="sys://Schema/System/Subsystem"/>
 		<SuperClass ID="{0002A543-0000-0000-C000-000000000046}" Name="Container" LinkObject="sys://Schema/System/Container"/>

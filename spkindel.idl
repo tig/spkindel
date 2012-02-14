@@ -10,7 +10,7 @@ import "ocidl.idl";
 [
 	uuid(0002A553-0000-0000-C000-000000000046),
 	version(1.0),
-	helpstring("spkindel 1.0 Type Library")
+	helpstring("spkindel 2.0 Type Library")
 ]
 library spkindelLib
 {
