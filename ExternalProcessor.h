@@ -62,7 +62,7 @@ BEGIN_NOTIFY_MAP(CExternalProcessor)
 	NOTIFY_PROPERTY(L"Network", OnNetworkChanged) 
 	NOTIFY_PROPERTY(L"EnableLogging", OnLoggingChanged) 
 	NOTIFY_PROPERTY(L"WatchdogCommand", OnWatchdogCommandChanged) 
-END_NOTIFY_MAP() 
+END_NOTIFY_MAP()
 
 	HRESULT STDMETHODCALLTYPE OnWatchdogCommandChanged(IPremiseObject *pObject, VARIANT newValue);
 };

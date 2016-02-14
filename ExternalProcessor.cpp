@@ -141,6 +141,7 @@ void CExternalProcessor::ProcessLine(LPCSTR psz)
 	int		cb;
 	LPCSTR pszData = NULL;
 	char	szCommandPrefix[255];
+	HRESULT hr = S_OK;
 
 	//ATLTRACE2("Processline(%s)\n", psz);
 
@@ -165,7 +166,6 @@ void CExternalProcessor::ProcessLine(LPCSTR psz)
 
 		// Get the child VirutalDevice with szCommandPrefix
 		//
-		HRESULT hr = S_OK;
         varValue = szCommandPrefix;
 
 		_ASSERTE(m_spSite);

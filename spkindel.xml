@@ -1,5 +1,5 @@
-<DriverLibrary ID="{0002A540-0000-0000-C000-000000000046}" Name="KindelSystems" Version="2.1.0" Description="Kindel Systems External Control Processor driver library">
-	<Class ID="{0002A541-0000-0000-C000-000000000046}" Name="KindelSystems" Icon="shortcutdevices.ico" Description="Top level class for External Control Processor subsystem">
+<DriverLibrary ID="{0002A540-0000-0000-C000-000000000046}" Name="KindelSystems" DisplayName="Kindel Systems" Version="2.1.0" Description="Kindel Systems External Control Processor driver">
+	<Class ID="{0002A541-0000-0000-C000-000000000046}" Name="KindelSystems"  DisplayName="Kindel Systems" Icon="shortcutdevices.ico" Description="Top level class for External Control Processor subsystem">
 		<SuperClass ID="{0002A542-0000-0000-C000-000000000046}" Name="Subsystem" LinkObject="sys://Schema/System/Subsystem"/>
 		<SuperClass ID="{0002A543-0000-0000-C000-000000000046}" Name="Container" LinkObject="sys://Schema/System/Container"/>
 		<ChildClass ID="{0002A544-0000-0000-C000-000000000046}" Name="ExternalProcessor" LinkObject="sys://Schema/KindelSystems/ExternalProcessor"/>
@@ -8,10 +8,10 @@
 		<SuperClass ID="{0002A546-0000-0000-C000-000000000046}" Name="Transport" LinkObject="sys://Schema/Networks/Transport"/>
 		<SuperClass ID="{0002A547-0000-0000-C000-000000000046}" Name="Container" LinkObject="sys://Schema/System/Container"/>
 		<SuperClass ID="{0002A548-0000-0000-C000-000000000046}" Name="ExternalDevice" LinkObject="sys://Schema/Device/ExternalDevice"/>
-		<Property ID="{0002A549-0000-0000-C000-000000000046}" Name="WatchdogCommand" Description="Command to send to verify communications. If empty, no communications verification will take place. Your external processor program should reply with any CRLF terminated text." DefaultValue="sys:watchdog" Class="sys://Schema/System/Text" Value=""/>
-		<ChildClass ID="{0002A54A-0000-0000-C000-000000000046}" Name="VirtualDevice" LinkObject="sys://Schema/KindelSystems/VirtualDevice"/>
+		<Property ID="{0002A549-0000-0000-C000-000000000046}" Name="WatchdogCommand" Description="Command to send to verify communications. If blank, no communications verification will take place. Your external processor program should reply with the string specified in WatchdogResponse (CRLF terminated)." DefaultValue="watchdog" Class="sys://Schema/System/Text" Value=""/>
+    <ChildClass ID="{0002A54A-0000-0000-C000-000000000046}" Name="VirtualDevice" LinkObject="sys://Schema/KindelSystems/VirtualDevice"/>
 	</Class>
-	<Class ID="{0002A54B-0000-0000-C000-000000000046}" Name="VirtualDevice" Icon="serial.ico" Description="Represents a device connected to the external processor.">
+	<Class ID="{0002A54B-0000-0000-C000-000000000046}" Name="VirtualDevice"  Icon="serial.ico" Description="Represents a device connected to the external processor.">
 		<SuperClass ID="{0002A54C-0000-0000-C000-000000000046}" Name="PortIO" LinkObject="sys://Schema/Networks/PortIO"/>
 		<SuperClass ID="{0002A54D-0000-0000-C000-000000000046}" Name="InternalDevice" LinkObject="sys://Schema/Device/InternalDevice"/>
 		<Property ID="{0002A54E-0000-0000-C000-000000000046}" Name="CommandPrefix" Description="Command prefix for this device (e.g. utv1)" DefaultValue="" Class="sys://Schema/System/Text" Value=""/>
@@ -19,6 +19,6 @@
 		<Property ID="{0002A550-0000-0000-C000-000000000046}" Name="LastCommandReceived" Description="Last command received from the external processor." DefaultValue="" ReadOnly="True" Class="sys://Schema/System/Text" Value=""/>
 	</Class>
 	<MergeEntry ID="{0002A551-0000-0000-C000-000000000046}" Name="Devices" InsertLocation="sys://Devices">
-		<Object ID="{0002A552-0000-0000-C000-000000000046}" Name="KindelSystems" Description="External Control Processor Driver" Initialize="0" Class="{0002A541-0000-0000-C000-000000000046}"/>
+		<Object ID="{0002A552-0000-0000-C000-000000000046}" Name="KindelSystems" DisplayName="Kindel Systems" Description="External Control Processor Driver" Initialize="0" Class="{0002A541-0000-0000-C000-000000000046}"/>
 	</MergeEntry>
 </DriverLibrary>

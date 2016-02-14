@@ -2,7 +2,7 @@ HKCR
 {
 	NoRemove CLSID
 	{
-		ForceRemove {0002A541-0000-0000-C000-000000000046} = s 'KindelSystems Premise Control Processor Drivers Class'
+		ForceRemove {0002A541-0000-0000-C000-000000000046} = s 'Kindel Systems Premise Control Processor Drivers Class'
 		{
 			InprocServer32 = s '%MODULE%'
 			{

@@ -10,14 +10,14 @@ import "ocidl.idl";
 [
 	uuid(0002A553-0000-0000-C000-000000000046),
 	version(1.0),
-	helpstring("spkindel 2.0 Type Library")
+	helpstring("Kindel Systems ExternalControlProcessor Type Library")
 ]
 library spkindelLib
 {
 	importlib("stdole2.tlb");
 	[
 		uuid(0002A541-0000-0000-C000-000000000046),
-		helpstring("ExternalControlProcessor Class")
+		helpstring("Kindel Systems ExternalControlProcessor Class")
 	]
 	coclass ExternalControlProcessor
 	{
